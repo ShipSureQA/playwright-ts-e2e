@@ -1,6 +1,8 @@
 # Playwright + TypeScript E2E Test Framework (Demo)
 
-![Playwright Tests](https://github.com/ShipSureQA/playwright-ts-e2e/actions/workflows/playwright.yml/badge.svg)
+[![Tests](https://github.com/ShipSureQA/playwright-ts-e2e/actions/workflows/playwright.yml/badge.svg)](https://github.com/ShipSureQA/playwright-ts-e2e/actions/workflows/playwright.yml) [![CodeQL](https://github.com/ShipSureQA/playwright-ts-e2e/actions/workflows/codeql.yml/badge.svg)](https://github.com/ShipSureQA/playwright-ts-e2e/actions/workflows/codeql.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+**📊 Live test report (updated on every run):** https://shipsureqa.github.io/playwright-ts-e2e/
 
 > **Demo / self-initiated project.** Built to show my approach to UI test automation. It tests [saucedemo.com](https://www.saucedemo.com), a public practice site made for test automation. It is not client work.
 
@@ -39,3 +41,17 @@ tests/        Spec files
 test-data/    Users and checkout data
 .github/      CI workflow
 ```
+
+## Quality gates
+Every push and pull request runs:
+- **Tests:** Lint (ESLint + typescript-eslint + eslint-plugin-playwright, zero warnings) → type check → 36 tests
+- **CodeQL** static security analysis (weekly + on every change)
+- **Dependabot**: weekly dependency and monthly GitHub Actions update PRs
+- **Live report** published to GitHub Pages from `main`
+
+## Author
+**Nagarasu P · [ShipSure QA](https://shipsureqa.github.io)**. Senior QA automation engineer, available for freelance projects.
+
+## License
+[MIT](LICENSE)
+
